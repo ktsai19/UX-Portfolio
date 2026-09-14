@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Designing a paper badging system and AI-matched paper approval flow for Semantic Scholar at the Allen Institute for AI." />
+    <title>Allen Institute for AI: Helping Researchers Find Papers — Kent Tsai</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div class="aurora" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="blob blob-c"></span>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="siteNav">
+      <div class="nav-inner glass">
+        <a href="index.html" class="nav-mark">KT<span class="nav-mark-dot">.</span></a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#process">Approach</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="https://www.linkedin.com/in/ktsai19/" target="_blank" rel="noopener noreferrer" class="btn btn-solid">LinkedIn</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <div class="nav-drawer glass" id="navDrawer">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#process">Approach</a>
+        <a href="https://www.linkedin.com/in/ktsai19/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- CASE HERO -->
+      <section class="cs-hero">
+        <a href="index.html#work" class="cs-back">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M12.5 8h-9M7.5 3.5 3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to work
+        </a>
+
+        <p class="kicker" data-reveal>Case study 04 · Allen Institute for AI · Semantic Scholar</p>
+        <h1 class="cs-title" data-reveal data-reveal-delay="1">
+          Helping researchers <em>quickly and effectively</em> find the papers they need
+        </h1>
+        <p class="cs-dek" data-reveal data-reveal-delay="2">
+          Semantic Scholar uses AI and NLP to help researchers discover
+          relevant scientific literature. I translated its most complex
+          backend features — paper classification, AI-matched authorship —
+          into interfaces researchers could trust at a glance.
+        </p>
+
+        <div class="cs-meta glass" data-reveal data-reveal-delay="3">
+          <div>
+            <h4>Role</h4>
+            <p>Product Designer</p>
+          </div>
+          <div>
+            <h4>Timeline</h4>
+            <p>6 months, 2020 – 2021</p>
+          </div>
+          <div>
+            <h4>Team</h4>
+            <p>Product, Engineering, Research, Data</p>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <p>Figma, Photoshop, Principle</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COVER IMAGE -->
+      <section class="section cs-cover-section">
+        <div class="cs-cover cs-cover--bleed cs-cover--bleed-green" data-reveal>
+          <img src="/cover-allen-institute.jpg" alt="Semantic Scholar's author page for Oren Etzioni, showing publication stats and a list of publications" class="cs-cover-bleed-img" />
+        </div>
+      </section>
+
+      <!-- OVERVIEW -->
+      <section class="section cs-content">
+        <div class="cs-row" data-reveal>
+          <h2>Overview</h2>
+          <div>
+            <p>
+              Semantic Scholar uses AI to help scholars discover relevant
+              research. My role was translating complex AI and NLP
+              features into user-friendly design — across search, new
+              features, and content explainability — with product,
+              engineering, research, and data teams.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-row" data-reveal>
+          <h2>The problem</h2>
+          <div>
+            <p>
+              With 190M+ papers, finding the right one fast is hard. And as
+              the platform started using AI to match papers to author
+              profiles, authors needed a way to review those matches, catch
+              mistakes, and trust the result.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-row" data-reveal>
+          <h2>Goals &amp; constraints</h2>
+          <div class="cs-goal-grid">
+            <div class="pillar glass">
+              <span class="pillar-num">Goal</span>
+              <p>Help users browse and evaluate thousands of research papers more effectively</p>
+            </div>
+            <div class="pillar glass">
+              <span class="pillar-num">Goal</span>
+              <p>Let authors quickly review AI-matched papers, including low-confidence predictions</p>
+            </div>
+            <div class="pillar glass">
+              <span class="pillar-num">Constraint</span>
+              <p>Stay legible inside an already dense, text-heavy paper snippet UI</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS GALLERY -->
+      <section class="section cs-content">
+        <div class="cs-row" data-reveal>
+          <h2>Process</h2>
+          <div>
+            <p>
+              Two related problems, one thread: help people trust an
+              AI-assisted system fast enough to actually use it.
+            </p>
+            <ul class="cs-process-list">
+              <li><strong>Paper badges.</strong> Interviewed 5 researchers, then A/B tested 3 placements — icons beat shorthand letters, and placement had to match natural scanning patterns.</li>
+              <li><strong>Four design principles.</strong> Extensible, responsive, harmonious, and discernible shaped every badge decision.</li>
+              <li><strong>AI-matched approval.</strong> Authors needed final say on low-confidence matches, a fast review flow, and a feedback loop to improve the model.</li>
+              <li><strong>Simplified by testing.</strong> Usability studies showed a dedicated review space beat a cluttered settings-page approach.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-gallery">
+          <div class="cs-gallery-item work-thumb-1 glass" data-reveal>
+            <span>Paper badging system</span>
+          </div>
+          <div class="cs-gallery-item work-thumb-2 glass" data-reveal data-reveal-delay="1">
+            <span>AI-matched paper review</span>
+          </div>
+          <div class="cs-gallery-item work-thumb-3 glass" data-reveal data-reveal-delay="2">
+            <span>Citation search micro-interaction</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUTCOME -->
+      <section class="section cs-content">
+        <div class="cs-row" data-reveal>
+          <h2>Outcome</h2>
+          <div>
+            <p>
+              The badging system shipped live on Semantic Scholar, giving
+              users an at-a-glance way to assess a paper's type and
+              credibility — and drew positive internal feedback for
+              brightening up a page that had been text-only. The paper
+              approval feature shipped with a transparent, built-in
+              feedback loop so authors could correct false matches and
+              improve the underlying model over time, alongside a
+              restructured search bar that made citation search discoverable
+              without taking up permanent space.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-stats" data-reveal>
+          <div class="glass">
+            <strong>190M+</strong>
+            <span>Research papers made easier to scan</span>
+          </div>
+          <div class="glass">
+            <strong>3</strong>
+            <span>Badge placements A/B tested for scan pattern</span>
+          </div>
+          <div class="glass">
+            <strong>4</strong>
+            <span>Design principles: extensible, responsive, harmonious, discernible</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEXT PROJECT -->
+      <section class="section cs-next">
+        <a href="case-study-onerai.html" class="cs-next-link glass" data-reveal>
+          <span class="kicker">Next project</span>
+          <h3>Governing 5,000+ AI assets <span>→</span></h3>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Kent Tsai. Built with care.</p>
+      <p class="footer-note">Designed &amp; developed with a liquid-glass system.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

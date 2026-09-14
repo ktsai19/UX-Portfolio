@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How a ground-up redesign of Microsoft's internal AI compliance platform brought a guided review flow to 5,000+ AI assets." />
+    <title>OneRAI: Scaling AI Governance — Kent Tsai</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div class="aurora" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="blob blob-c"></span>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="siteNav">
+      <div class="nav-inner glass">
+        <a href="index.html" class="nav-mark">KT<span class="nav-mark-dot">.</span></a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#process">Approach</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="https://www.linkedin.com/in/ktsai19/" target="_blank" rel="noopener noreferrer" class="btn btn-solid">LinkedIn</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <div class="nav-drawer glass" id="navDrawer">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#process">Approach</a>
+        <a href="https://www.linkedin.com/in/ktsai19/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- CASE HERO -->
+      <section class="cs-hero">
+        <a href="index.html#work" class="cs-back">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M12.5 8h-9M7.5 3.5 3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to work
+        </a>
+
+        <p class="kicker" data-reveal>Case study 01 · Microsoft · AI Governance</p>
+        <h1 class="cs-title" data-reveal data-reveal-delay="1">
+          Governing 5,000+ AI assets, <em>without</em> the chaos
+        </h1>
+        <p class="cs-dek" data-reveal data-reveal-delay="2">
+          OneRAI is Microsoft's internal platform for AI compliance review — the
+          single destination product teams use to register, assess, and get
+          approval for every AI system across the company. I led a ground-up
+          redesign that turned a black-box review process into a guided,
+          trackable flow, then prototyped an AI agent to push review time
+          down even further.
+        </p>
+
+        <div class="cs-meta glass" data-reveal data-reveal-delay="3">
+          <div>
+            <h4>Role</h4>
+            <p>Lead Product Designer</p>
+          </div>
+          <div>
+            <h4>Timeline</h4>
+            <p>4 weeks</p>
+          </div>
+          <div>
+            <h4>Team</h4>
+            <p>4 PMs, 5 engineers</p>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <p>Figma, Figma Make</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COVER IMAGE -->
+      <section class="section cs-cover-section">
+        <div class="cs-cover cs-cover--bleed cs-cover--bleed-red" data-reveal>
+          <img src="/cover-onerai.jpg" alt="OneRAI's dashboard, showing pending AI system and model assessments alongside a compliance overview panel" class="cs-cover-bleed-img" />
+        </div>
+      </section>
+
+      <!-- OVERVIEW -->
+      <section class="section cs-content">
+        <div class="cs-row" data-reveal>
+          <h2>Overview</h2>
+          <div>
+            <p>
+              OneRAI is Microsoft's single destination for AI compliance —
+              registering, reviewing, and approving every AI system the
+              company ships. By the time I joined, it covered 5,000+
+              systems, but teams had little sense of what was required of
+              them or how long approval would take.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-row" data-reveal>
+          <h2>The problem</h2>
+          <div>
+            <p>
+              The easy fix was copying the old flow onto the new platform.
+              I pushed for more: teams didn't know what came after
+              registering a model, assessments duplicated data they'd
+              already given us, and once submitted, a review vanished into
+              a black box with no visibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-row" data-reveal>
+          <h2>Goals &amp; constraints</h2>
+          <div class="cs-goal-grid">
+            <div class="pillar glass">
+              <span class="pillar-num">Goal</span>
+              <p>Give product teams a guided, intuitive path from registration to approval</p>
+            </div>
+            <div class="pillar glass">
+              <span class="pillar-num">Goal</span>
+              <p>Cut the time and manual effort required to complete an assessment</p>
+            </div>
+            <div class="pillar glass">
+              <span class="pillar-num">Constraint</span>
+              <p>Ship in 4 weeks with a team of 4 PMs and 5 engineers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS GALLERY -->
+      <section class="section cs-content">
+        <div class="cs-row" data-reveal>
+          <h2>Process</h2>
+          <div>
+            <p>
+              I mapped the end-to-end journey with product teams, review
+              leads, and board members before drawing a single screen —
+              aligning everyone around one source of truth. That surfaced
+              three recurring pain points, which became the redesign:
+            </p>
+            <ul class="cs-process-list">
+              <li><strong>Guided experience.</strong> A dynamic checklist and progress indicator, so teams always know what's next.</li>
+              <li><strong>Faster assessments.</strong> API integration to import data instead of re-entering it, cutting completion time from 30 days to 4–5.</li>
+              <li><strong>Status visibility.</strong> Self-serve progress tracking, replacing a black box with no way to check in.</li>
+              <li><strong>Homepage &amp; IA revamp.</strong> Made the whole platform easier to navigate.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-gallery">
+          <div class="cs-gallery-item work-thumb-2 glass" data-reveal>
+            <span>User journey mapping workshop</span>
+          </div>
+          <div class="cs-gallery-item work-thumb-3 glass" data-reveal data-reveal-delay="1">
+            <span>Guided review checklist</span>
+          </div>
+          <div class="cs-gallery-item work-thumb-4 glass" data-reveal data-reveal-delay="2">
+            <span>API-integrated assessments</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUTCOME -->
+      <section class="section cs-content">
+        <div class="cs-row" data-reveal>
+          <h2>Outcome</h2>
+          <div>
+            <p>
+              The redesign shipped as OneRAI's general release and is now
+              the system of record for compliance review across every
+              Microsoft engineering division. I also prototyped OneRAI
+              Agent, a conversational layer that uses AI to help fill in
+              assessments, surface open questions, and recommend next steps
+              — aimed at cutting the end-to-end review time from 25–30 days
+              down to 2–3.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-stats" data-reveal>
+          <div class="glass">
+            <strong>1.6 → 4.5</strong>
+            <span>System Usability Scale</span>
+          </div>
+          <div class="glass">
+            <strong>60%</strong>
+            <span>Fewer support tickets about requirements</span>
+          </div>
+          <div class="glass">
+            <strong>~15 days</strong>
+            <span>Saved from start to completion</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEXT PROJECT -->
+      <section class="section cs-next">
+        <a href="case-study-referral.html" class="cs-next-link glass" data-reveal>
+          <span class="kicker">Next project</span>
+          <h3>A referral program educators trust <span>→</span></h3>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Kent Tsai. Built with care.</p>
+      <p class="footer-note">Designed &amp; developed with a liquid-glass system.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

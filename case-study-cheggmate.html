@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How Chegg built and shipped a 0→1 conversational AI product, CheggMate, in 6 weeks to answer the threat of ChatGPT." />
+    <title>CheggMate: A New Learning Paradigm — Kent Tsai</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div class="aurora" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="blob blob-c"></span>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="siteNav">
+      <div class="nav-inner glass">
+        <a href="index.html" class="nav-mark">KT<span class="nav-mark-dot">.</span></a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#process">Approach</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="https://www.linkedin.com/in/ktsai19/" target="_blank" rel="noopener noreferrer" class="btn btn-solid">LinkedIn</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <div class="nav-drawer glass" id="navDrawer">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#process">Approach</a>
+        <a href="https://www.linkedin.com/in/ktsai19/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- CASE HERO -->
+      <section class="cs-hero">
+        <a href="index.html#work" class="cs-back">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M12.5 8h-9M7.5 3.5 3 8l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to work
+        </a>
+
+        <p class="kicker" data-reveal>Case study 03 · Chegg · 0→1 AI Product</p>
+        <h1 class="cs-title" data-reveal data-reveal-delay="1">
+          Designing for a new student learning paradigm in the world of <em>AI</em>
+        </h1>
+        <p class="cs-dek" data-reveal data-reveal-delay="2">
+          When ChatGPT put Chegg's core business at risk almost overnight, I
+          led end-to-end design on CheggMate — a 0→1 conversational AI
+          product built in six weeks and shipped to millions of students,
+          backed by Chegg's network of 150,000+ subject-matter experts.
+        </p>
+
+        <div class="cs-meta glass" data-reveal data-reveal-delay="3">
+          <div>
+            <h4>Role</h4>
+            <p>Lead Designer</p>
+          </div>
+          <div>
+            <h4>Timeline</h4>
+            <p>Vision → GA in 6 weeks, Sep 2023</p>
+          </div>
+          <div>
+            <h4>Team</h4>
+            <p>Product, Eng, Content design, Data science, UXR</p>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <p>Figma</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COVER IMAGE -->
+      <section class="section cs-cover-section">
+        <div class="cs-cover cs-cover--bleed" data-reveal>
+          <img src="/cover-cheggmate.jpg" alt="CheggMate's welcome screen, with a chat input and suggested prompts like 'Show me the steps to solve...'" class="cs-cover-bleed-img" />
+        </div>
+      </section>
+
+      <!-- OVERVIEW -->
+      <section class="section cs-content">
+        <div class="cs-row" data-reveal>
+          <h2>Overview</h2>
+          <div>
+            <p>
+              When ChatGPT arrived, it became an existential threat to
+              Chegg's business — 50% of students were already using it. But
+              Chegg had two advantages ChatGPT didn't: a network of human
+              experts, and a decade of student behavior data. The goal was
+              CheggMate, a conversational AI product built from scratch to
+              retain that engagement.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-row" data-reveal>
+          <h2>The problem</h2>
+          <div>
+            <p>
+              This was uncharted territory on a fast timeline: one-week
+              sprints, heavy ambiguity, requirements shifting as fast as
+              the AI landscape did. I defined scope as we went, moving from
+              vision to general release in roughly six weeks — replacing
+              Chegg's core product by fall 2023.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-row" data-reveal>
+          <h2>Goals &amp; constraints</h2>
+          <div class="cs-goal-grid">
+            <div class="pillar glass">
+              <span class="pillar-num">Goal</span>
+              <p>Design and ship a 0→1 conversational AI product fast enough to matter</p>
+            </div>
+            <div class="pillar glass">
+              <span class="pillar-num">Goal</span>
+              <p>Make an AI chat interface feel guided, not intimidating, for first-time users</p>
+            </div>
+            <div class="pillar glass">
+              <span class="pillar-num">Constraint</span>
+              <p>1-week sprint timeline, evolving requirements, no existing pattern to build from</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS GALLERY -->
+      <section class="section cs-content">
+        <div class="cs-row" data-reveal>
+          <h2>Process</h2>
+          <div>
+            <p>
+              I ran goal-setting, research, design, and validation on a
+              tight, repeating loop across a series of one-week sprints.
+              Four problems shaped most of the design work:
+            </p>
+            <ul class="cs-process-list">
+              <li><strong>Dynamic Guides.</strong> Smart, contextual prompts, since students didn't know what they could ask an AI.</li>
+              <li><strong>Universal Input.</strong> A dynamic keyboard that adapts to any subject — Chegg's first input component built to unify every input type.</li>
+              <li><strong>Enriched content.</strong> UI consistency and multi-modal responses to bring flashcards, practice tests, and expert content into one thread.</li>
+              <li><strong>A reusable system.</strong> Conversational UI guidelines and a design system other designers picked up immediately.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-gallery">
+          <div class="cs-gallery-item work-thumb-4 glass" data-reveal>
+            <span>Dynamic guided prompts</span>
+          </div>
+          <div class="cs-gallery-item work-thumb-1 glass" data-reveal data-reveal-delay="1">
+            <span>Universal subject input</span>
+          </div>
+          <div class="cs-gallery-item work-thumb-2 glass" data-reveal data-reveal-delay="2">
+            <span>Conversational design system</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUTCOME -->
+      <section class="section cs-content">
+        <div class="cs-row" data-reveal>
+          <h2>Outcome</h2>
+          <div>
+            <p>
+              CheggMate shipped as Chegg's new AI companion, built on GPT-4
+              and Chegg's network of 150,000+ subject-matter experts —
+              covered by BusinessWire and MarketWatch, which noted the
+              "very positive" feedback drove Chegg's shares up on
+              announcement. In a diary study with 62 college students,
+              CheggMate was described as helpful, accurate, and efficient.
+              As Rahul, SVP of Content, put it: "The speed at which Kent
+              was able to deliver the prototype was at new record speed at
+              Chegg."
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-stats" data-reveal>
+          <div class="glass">
+            <strong>3.5M → 9M</strong>
+            <span>Questions asked per quarter, Q1'23 to Q1'24</span>
+          </div>
+          <div class="glass">
+            <strong>72 → 88</strong>
+            <span>Clarity score, before/after</span>
+          </div>
+          <div class="glass">
+            <strong>4.1 / 5</strong>
+            <span>Power-user confidence in accuracy</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEXT PROJECT -->
+      <section class="section cs-next">
+        <a href="case-study-allen-institute.html" class="cs-next-link glass" data-reveal>
+          <span class="kicker">Next project</span>
+          <h3>Helping researchers quickly and effectively find the papers they need <span>→</span></h3>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Kent Tsai. Built with care.</p>
+      <p class="footer-note">Designed &amp; developed with a liquid-glass system.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
